@@ -1,7 +1,7 @@
 # Jenkins Multibranch Pipeline Documentation
 
 <p align="center">
-    <img src='docs/img/treasure-island-dr-livesey.gif'>
+    <img src='treasure-island-dr-livesey.gif'>
 </p>
 
 
@@ -24,7 +24,7 @@
 ## Introduction
 Был создан проект Multibranch Pipeline для автоматизации сборки и деплоя проекта на публичный реестр Докера. Для написания `Jenkinsfile` был использован `scripted pipeline` стиль. Добавлено параллельное выполнение некоторых этапов. 
 
-![Overview Stages](docs/img/stages.png)
+![Overview Stages](/stages.png)
 
 ---
 
@@ -41,7 +41,7 @@
   }
   ```
 - **Результат**:  
-  ![CLONE repo](docs/img/clone-stage.png)
+  ![CLONE repo](/clone-stage.png)
 
 ---
 
@@ -60,7 +60,7 @@
   }
   ```
 - **Результат**:  
-  ![LINT Dockerfile](docs/img/lint-stage.png)
+  ![LINT Dockerfile](/lint-stage.png)
 
 ---
 
@@ -77,7 +77,7 @@
   }
   ```
 - **Результат**:  
-  ![BUILD Docker Image](docs/img/build-stage.png)
+  ![BUILD Docker Image](/build-stage.png)
 
 ---
 
@@ -103,8 +103,8 @@
   }
   ```
 - **Результат**:  
-  ![SCAN](docs/img/scan-stage.png)
-  ![LOGIN](docs/img/login-stage.png)
+  ![SCAN](/scan-stage.png)
+  ![LOGIN](/login-stage.png)
 ---
 
 ### DEPLOY and DELETE - Parallel Stages
@@ -131,7 +131,7 @@
   }
   ```
 - **Результат**:  
-  ![DEPLOY and DELETE](docs/img/deploy-delete-stage.png)
+  ![DEPLOY and DELETE](/deploy-delete-stage.png)
 
 ---
 
@@ -241,11 +241,11 @@ def logBuildInfo() {
 
 ## Статусы сборок
 1. **Unstable build**:  
-   ![Unstable build](docs/img/unstable-status.png)
+   ![Unstable build](/unstable-status.png)
 
 2. **Successful Build**:  
-   ![Successful Build](docs/img/successfull-status.png)
+   ![Successful Build](/successfull-status.png)
 
 3. **Failed Build**:  
-   ![Failed Build](docs/img/failure-status.png)
+   ![Failed Build](/failure-status.png)
 
